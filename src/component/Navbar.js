@@ -1,5 +1,6 @@
 import React, { Component,useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import {Link as RouterLink} from 'react-router-dom';
 
 export default class Navbar extends Component {
 
@@ -14,18 +15,13 @@ export default class Navbar extends Component {
   render() {
     return (
       <div className="navbar-item">
-        <Link
-        activeClass="active"
-          to="section1"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
+        <RouterLink
+          to="/"
           className="heading"
           onSetActive={this.handleSetActive}
         >
           KU Printing Service
-        </Link>
+        </RouterLink>
 
         <Link
           activeClass="active"

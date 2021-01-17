@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {Link} from 'react-router-dom';
 import Firebase from "./Firebase";
 import background from "../image/background-1.jpg";
+// import axios from 'axios';
 
 const MainHome = (props)=>{
 
@@ -14,6 +15,15 @@ const MainHome = (props)=>{
             // An error happened.
           });
     }
+
+    // useEffect(()=>{
+    //     axios.get('/user/all')
+    //     .then(response => {
+    //         console.log(response.data)
+    //     }) 
+    // },[])
+
+
     return(
         <div className="firstbackground">
             <p className="mainParagraph">My Site Welcomes You</p>

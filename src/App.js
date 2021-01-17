@@ -11,11 +11,10 @@ import Contact from "./component/Contact";
 import {BrowserRouter as Router,Link,Route,Switch } from 'react-router-dom';
 import Login from './component/Login'
 import SignUp from './component/SignUp'
-
-// import Test from './component/Test';
-// import List from './component/List';
-// import Show from './component/Show';
-// import Create from './component/Create';
+import TestexportData from './component/testexportData';
+import TestexportDataIndex from './component/TestexportDataIndex';
+import Order from './component/Order';
+import FileHistory from './component/FileHistory';
 
 class App extends Component {
 
@@ -65,7 +64,6 @@ class App extends Component {
       <Navbar/>
         <Switch>
           <Route exact path="/" >
-            {/* <p>Test0.0.1</p> */}
             <div id="section1"> 
               <MainHome name="section1"/>
             </div>
@@ -85,6 +83,10 @@ class App extends Component {
 
           <Route path="/login" component={Login}/>
           <Route path="/signUP" component={SignUp}/>
+          <Route path="/export" component={TestexportData} />
+          <Route path="/exportdata/:id" component={TestexportDataIndex} />
+          <Route path="/order" component={Order}/>
+          <Route path="/user/filehistory" component={FileHistory}/>
         </Switch>
       </Router>
     )}

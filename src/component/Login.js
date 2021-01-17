@@ -1,5 +1,14 @@
 import React,{useState,useEffect} from "react";
 import Firebase from './Firebase';
+// import Navbar from "./Navbar";
+
+// import MainHome from './MainHome';
+// import About from './About';
+// import Service from './Service';
+// import OpeningHours from './OpeningHours';
+// import Contact from "./Contact";
+import {Link} from 'react-router-dom';
+// import SignUp from './SignUp'
 
 const Login = (props)=>{
 
@@ -43,11 +52,33 @@ const Login = (props)=>{
 
 
     return(
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Please Enter your Email" value={email} onChange={(e) =>{setEmail(e.target.value)}}/>
-            <input type="password" placeholder="Enter your Password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
-            <input type="submit" value="Login"/>
-        </form>
+        <div className="loginBackground">
+            <p className="loginParagraph">LOG IN</p>
+            <p className="subloginParagraph1">New to this site? <span>
+                <Link to="/signUP">
+                    Sign Up
+                </Link></span>
+            </p>
+
+            <form onSubmit={handleSubmit}>
+                <div className="emailBox">
+                    <input className="loginTextfield" type="text" placeholder="Please Enter your Email" value={email} onChange={(e) =>{setEmail(e.target.value)}}/>
+                </div>
+                <div className="passwordBox">
+                    <input className="loginTextfield" type="password" placeholder="Enter your Password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
+                </div>
+                <div className="submitBox">
+                    <input className="loginSubmit" type="submit" value="Login"/>
+                </div> 
+                <p className="subloginParagraph2">Forgot password? <span>
+                    <Link to="/signUp">
+                       
+                    Click
+                    </Link></span>
+                </p>  
+            </form>  
+            <hr/>
+        </div> 
     )
 }
 export default Login;

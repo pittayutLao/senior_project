@@ -3,7 +3,6 @@
  }
 
  .heading {
-  padding-left: 5%;
   color: black;
   font-family:'Gill Sans';
   font-size: 250%;
@@ -12,35 +11,35 @@
  }
 
 .home {
-  padding-left: 40%;
+  padding-left: 25%;
   color: black;
   font-size: 140%;
   font-weight: bold;
 }
 
 .about {
-  padding-left: 1%;
+  padding-left: 2.5%;
   color: black;
   font-size: 140%;
   font-weight: bold;
 }
 
 .service {
-  padding-left: 1%;
+  padding-left: 2.5%;
   color: black;
   font-size: 140%;
   font-weight: bold;
 }
 
 .openingHours {
-  padding-left: 1%;
+  padding-left: 2.5%;
   color: black;
   font-size: 140%;
   font-weight: bold;
 }
 
 .contact {
-  padding-left: 1%;
+  padding-left: 2.5%;
   color: black;
   font-size: 140%;
   font-weight: bold;
@@ -49,7 +48,7 @@
 /*  */
 .firstbackground{
   background-color:#f7f7f7;
-  height: 650%;
+
 }
 
 .mainParagraph {
@@ -76,16 +75,17 @@
   margin-top: 3%;
   font-size: 100%;
   font-weight: 400;
-  padding-left: 29%;
-  padding-right: 29%;
+  padding-left: 27%;
+  padding-right: 27%;
 }
 
 .loginsignupButton {
+  padding-top: 3%;
   text-align: center;
 }
 
 .loginButtonMainpage {
-  font-size: 100%;
+  font-size: 110%;
   font-weight: 600;
   width: 8%;
   background-color: black;
@@ -108,109 +108,171 @@
 }
 
 .imageMainpage {
-  align-items: center;  
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  height: 500px;
 }
 /*  */
 /*  */
 .secondbackground {
   background-color:#f6d8cc;
-  height: 500px;
+  
 }
 
 .mainParagraphAbout {
   text-align: center;
   font-family:'Gill Sans';
   color: black;
-  margin-top: 50px;
-  font-size: 50px;
-  font-weight: 500;
-  padding-top: 100px;
+  padding-top: 6%;
+  font-size: 300%;
+  font-weight: 450;
 }
 
 .subParagraphAbout {
   text-align: center;
   font-family:'Gill Sans';
   color: black;
-  margin-top: 50px;
-  font-size: 23px;
+  padding-top: 2%;
+  font-size: 150%;
   font-weight: 200;
 }
 
 .descriptionParagraphAbout {
   text-align: center;
   color: black;
-  margin-top: 40px;
-  font-size: 15px;
+  padding-top: 2%;
+  font-size: 100%;
   font-weight: 400;
-  padding-left: 520px;
-  padding-right: 520px;
+  padding-left: 27%;
+  padding-right: 27%;
+  padding-bottom: 6%;
 }
 /*  */
 /*  */
 .thirdbackground {
-  background-image: url("/src/image/background-1.jpg");
-  height: 450px;
+  background-image: url("/src/image/background-2.jpg");
+  background-size: 100%;
+  
 }
 
 .mainParagraphService {
   text-align: center;
   font-family:'Gill Sans';
-  padding-top: 160px;
+  padding-top: 8%;
   color: white;
-  font-size: 50px;
+  font-size: 350%;
   font-weight: 500;
 }
 
 .subParagraphService {
   text-align: center;
   font-family:'Gill Sans';
-  padding-top: 0px;
+  padding-bottom: 8%;
   color:white;
-  font-size: 23px;
-  font-weight: 300;
+  font-size: 150%;
+  font-weight: 400;
 }
 
 .thirdbackground2 {
-  background-color: gray;
-  padding-top: 500px;
-  padding-bottom: 50px;
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
   color: black;
 }
+
+.thirdbackground2 img{
+  height: 40%;
+}
+
+/* .thirdbackground2 h3{
+  color: red;
+} */
+
 /*  */
 /*  */
 .fourthbackground {
   background-color:#f7f7f7;
-  height: 500px;
+
 }
 
 .mainParagraphOPH {
   text-align: center;
   font-family:'Gill Sans';
   color: black;
-  margin-top: 50px;
-  font-size: 30px;
-  font-weight: 500;
-  padding-top: 100px;
+  padding-top: 8%;
+  font-size: 160%;
+  font-weight: 350;
 }
 
 .subParagraphOPH {
   text-align: center;
   font-family:'Gill Sans';
   color: black;
-  margin-top: 50px;
-  font-size: 25px;
+  padding-top: 2%;
+  font-size: 140%;
   font-weight: 300;
 }
 
 .descriptionParagraphOPH {
   text-align: center;
   color: black;
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  padding-left: 520px;
-  padding-right: 520px;
+  padding: 2%;
+  font-size: 110%;
+  font-weight: 350;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 8%;
 }
+/*  */
+/*  */
+.fifthbackground {
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.fifthcontain {
+  background-color: #f6d8cc;
+  width: 100%;
+  background-image: url('/src/image/location.jpg');
+  background-repeat: no-repeat;
+  background-size: 55%;  
+}
+
+.mainParagraphContact {
+  text-align: center;
+  font-family:'Gill Sans';
+  color: black;
+  padding-left: 55%;
+  padding-top: 6%;
+  font-size: 280%;
+  font-weight: 400;
+  padding-bottom: 2%;
+
+}
+
+.addressContact {
+  text-align: center;
+  font-family:'Gill Sans';
+  color: black;
+  padding-left: 55%;
+  font-size: 100%;
+}
+
+.lastaddressContact{
+  text-align: center;
+  font-family:'Gill Sans';
+  color: black;
+  padding-left: 55%;
+  font-size: 100%;
+  padding-bottom: 6%;
+}
+
 /*  */
 /*  */
 .nav-item > .active {
@@ -219,10 +281,80 @@
 
 .navbar-item{
   position: fixed;
+  text-align: center;
   width:100%;
   background-color: white;
 }
 
-/* .imageMainpage {
-  background-size: ;
-} */
+/*  */
+/*  */
+.loginBackground {
+  background-color: #E8E8E8;
+}
+
+.loginParagraph {
+  padding-top: 5%;
+  text-align: center;
+  font-family:'Gill Sans';
+  color: black;
+  font-size: 300%;
+  font-weight: 1000;
+}
+
+.subloginParagraph1 {
+  text-align: center;
+  font-size: 110%;
+}
+
+.emailBox {
+  padding-top: 2.5%;
+  text-align: center;
+}
+
+.passwordBox {
+  padding-top: 2.5%;
+  text-align: center;
+}
+
+.loginTextfield {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  font-size: 120%;
+  width: 25%;
+  border-radius: 20px;
+  border-color: black;
+  outline-style: none;
+}
+
+.submitBox {
+  padding-top: 4%;
+  text-align: center;
+}
+
+.loginSubmit {
+  padding-top: 0.1%;
+  padding-bottom: 0.3%;
+  padding-left: 1%;
+  font-size: 150%;
+  font-weight: 700%;
+  width: 12%;
+  border-radius: 10px;
+  border-color: black;
+  outline-style: none;
+  color: white;
+  background-color: #3273DC;
+}
+
+.subloginParagraph2 {
+  text-align: center;
+  font-size: 110%;
+  padding-bottom: 5%;
+}
+/*  */
+/*  */
+
+.historyList {
+  padding-top: 5%;
+
+}

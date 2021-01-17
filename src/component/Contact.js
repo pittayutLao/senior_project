@@ -2,20 +2,19 @@ import React from "react";
 
 const Contact = (props)=>{
     return(
-        <div className="secondbackground">
-            <p className="mainParagraphAbout">About</p>
-            <div class="subParagraphAbout">
-                <p>Who We Are</p>
+        <div className="fifthbackground">
+            <div className="fifthcontain">
+                <p className="mainParagraphContact">Our Shop</p>
+                <p className="addressContact">50 ถนน พหลโยธิน แขวง ลาดยาว</p>
+                <p className="addressContact">เขตจตุจักร กรุงเทพมหานคร 10903</p>
+                <p className="addressContact">คณะวิศวกรรมศาสตร์</p>
+                <p className="addressContact">มหาวิทยาลัยเกษตรศาสตร์</p>
+                <p className="addressContact">printing.ku@gmail.com</p>
+                <p className="lastaddressContact">Tel.123-456-7890</p>
             </div>
-
-            <div className="descriptionParagraphAbout">
-                <p>
-                As one of the printing businesses in the Kasetsart University, we attribute our reputation to the lasting customer 
-                relationships we’ve developed throughout the years. We believe that all of our customers deserve the highest 
-                level of service, and we are committed to providing just that. Get in touch today to learn more.
-                </p>
-            </div>
+            <hr/>
         </div>
+        
     )
 }
 export default Contact;
