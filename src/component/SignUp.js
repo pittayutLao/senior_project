@@ -66,39 +66,31 @@ const SignUp = (props)=>{
                 </Link></span>
             </p>
             <form onSubmit={handleSubmit}>
-              <div className="emailBox">
-                <input className="loginTextfield" type="text" placeholder="FirstName" value={firstname} onChange={(e) => {setFirstName(e.target.value)}} required />
-              </div>
-
-              <div className="emailBox">
-                <input className="loginTextfield" type="text" placeholder="LastName" value={lastname} onChange={(e) => {setLastName(e.target.value)}} required />
-              </div>
-
-              <div className="emailBox">
-                <input className="loginTextfield" type="text" placeholder="Username" value={userName} onChange={(e) => {setUserName(e.target.value)}} required/>
-              </div>
-
-              <div className="emailBox">
-                <input className="loginTextfield" type="text" placeholder="Phone" value={phone} onChange={(e) => {setPhone(e.target.value)}} required />
-              </div>
-
-              <div className="emailBox">
-                <input className="loginTextfield" type="email" placeholder="Email address" value={email} onChange={(e) =>{setEmail(e.target.value)}} required />
-              </div>
-
-              <div className="passwordBox">
-                <input className="loginTextfield" type="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}} required/>
-              </div>
-
-              <div className="passwordBox">
-                <input className="loginTextfield" type="password" placeholder="Confirm Password" value={repass} onChange={(e)=>{setRepass(e.target.value)}} required/>
+              <div className="allBox">
+                <div className="S-line">
+                  <input className="Textfield-All" type="text" placeholder="FirstName" value={firstname} onChange={(e) => {setFirstName(e.target.value)}} required />{' '}
+                  <input className="Textfield-All" type="text" placeholder="LastName" value={lastname} onChange={(e) => {setLastName(e.target.value)}} required />
+                </div>
+                <div className="S-line">
+                  <input className="Textfield-All" type="text" placeholder="Username" value={userName} onChange={(e) => {setUserName(e.target.value)}} required/>{' '}
+                  <input className="Textfield-All" type="text" placeholder="Phone" value={phone} onChange={(e) => {setPhone(e.target.value)}} required />
+                </div>
+                <div className="SE-line">
+                  <input className="Textfield-All" type="email" placeholder="Email address" value={email} onChange={(e) =>{setEmail(e.target.value)}} required />
+                </div>
+                <div className="SE-line">
+                  <input className="Textfield-All" type="password" placeholder="Password" value={password} onChange={(e)=>{setPassword(e.target.value)}} required/>{' '}
+                </div>
+                <div className="SE-line">
+                  <input className="Textfield-All" type="password" placeholder="Confirm Password" value={repass} onChange={(e)=>{setRepass(e.target.value)}} required/>
+                </div>
               </div>
 
               <div className="submitBox">
                 <input className="loginSubmit" type="submit" value="Sign up"/>
               </div>
               <p className="subloginParagraph2">Forgot password? <span>
-                    <Link to="/login">
+                    <Link>
                     Click
                     </Link></span>
                 </p> 

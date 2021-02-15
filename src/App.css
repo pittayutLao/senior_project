@@ -44,6 +44,8 @@
   font-size: 140%;
   font-weight: bold;
 }
+
+
 /*  */
 /*  */
 .firstbackground{
@@ -57,7 +59,7 @@
   color: black;
   font-size: 500%;
   font-weight: 400;
-  padding-top: 5%;
+  padding-top: 8%;
 }
 
 .subParagraph {
@@ -177,14 +179,38 @@
 }
 
 .thirdbackground2 {
-  background-color: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  background-color:white;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.first {
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.serviceHeading {
+  text-align: left;
+  font-family:'Gill Sans';
+  padding-left: 25%;
+  font-size: 150%;
+  font-weight: 600;
+  color:black;
+}
+
+.serviceSubheading {
+  text-align: left;
+  padding-left: 25%;
+  font-size: 110%;
+  font-weight: 600;
   color: black;
 }
 
-.thirdbackground2 img{
-  height: 40%;
+.serviceParagraph {
+  padding-left: 25%;
+  padding-right: 20%;
+  text-align: left;
+  color: black;
 }
 
 /* .thirdbackground2 h3{
@@ -286,6 +312,12 @@
   background-color: white;
 }
 
+.navbar-user{
+  text-align: right;
+  padding-top: 0.5%;
+  padding-right: 10%;
+}
+
 /*  */
 /*  */
 .loginBackground {
@@ -293,7 +325,7 @@
 }
 
 .loginParagraph {
-  padding-top: 5%;
+  padding-top: 10%;
   text-align: center;
   font-family:'Gill Sans';
   color: black;
@@ -354,7 +386,110 @@
 /*  */
 /*  */
 
-.historyList {
-  padding-top: 5%;
+.allBox {
+  text-align: center;
+}
 
+.Textfield-All{
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  font-size: 120%;
+  width: 18%;
+  border-radius: 20px;
+  border-color: black;
+  outline-style: none;
+}
+
+.S-line{
+  padding-top: 2.5%;
+}
+
+.SE-line{
+  padding-top: 2.0%;
+  padding-right: 22%;
+}
+
+.SE-text{
+  font-size: 120%;
+  color: black;
+}
+
+/*  */
+/*  */
+
+.historyList {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.orderButton{
+  text-align: right;
+  padding-right: 10%;
+}
+
+.orderbackground {
+  background-color: #E8E8E8;
+  padding-top: 10%;
+}
+
+.pricebackground {
+  background-color: #EAF7FF;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 120%;
+  font-weight: 500;
+  padding-bottom: 5%;
+}
+
+.headingorder {
+  text-align: center;
+  font-family:'Gill Sans';
+  color: black;
+  font-size: 200%;
+  font-weight: 500;
+}
+
+.subheadingorder {
+  text-align: center;
+  font-family:'Gill Sans';
+  color: black;
+  font-size: 150%;
+}
+
+.paddingorder1 {
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+.paddingorder2 {
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+.paddingorder3{
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+.redrequir {
+  color: red;
+}
+
+.paddingNow{
+  padding-top: 5%;
 }

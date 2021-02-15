@@ -1,14 +1,6 @@
 import React,{useState,useEffect} from "react";
 import Firebase from './Firebase';
-// import Navbar from "./Navbar";
-
-// import MainHome from './MainHome';
-// import About from './About';
-// import Service from './Service';
-// import OpeningHours from './OpeningHours';
-// import Contact from "./Contact";
 import {Link} from 'react-router-dom';
-// import SignUp from './SignUp'
 
 const Login = (props)=>{
 
@@ -55,7 +47,7 @@ const Login = (props)=>{
         <div className="loginBackground">
             <p className="loginParagraph">LOG IN</p>
             <p className="subloginParagraph1">New to this site? <span>
-                <Link to="/signUP">
+                <Link to="/signup">
                     Sign Up
                 </Link></span>
             </p>
@@ -71,8 +63,7 @@ const Login = (props)=>{
                     <input className="loginSubmit" type="submit" value="Login"/>
                 </div> 
                 <p className="subloginParagraph2">Forgot password? <span>
-                    <Link to="/signUp">
-                       
+                    <Link>
                     Click
                     </Link></span>
                 </p>  

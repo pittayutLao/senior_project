@@ -13,7 +13,7 @@ const TestexportData =(props)=>{
     },[])
 
     return(
-        <div>
+        <div className="paddingNow">
             {data.map((user) => {
                 return <Link to={"/exportdata/"+user.id}>{user.id} || {user.firstName} || {user.lastName} <br/></Link>
             } )}

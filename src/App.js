@@ -13,8 +13,11 @@ import Login from './component/Login'
 import SignUp from './component/SignUp'
 import TestexportData from './component/testexportData';
 import TestexportDataIndex from './component/TestexportDataIndex';
-import Order from './component/Order';
+import BookbindingOrder from './component/BookbindingOrder';
+import BookbindingList from './component/BookbindingList';
 import FileHistory from './component/FileHistory';
+import PhotocopyOrder from './component/PhotocopyOrder';
+import PhotocopyList from './component/PhotocopyList';
 
 class App extends Component {
 
@@ -82,11 +85,15 @@ class App extends Component {
           </Route>
 
           <Route path="/login" component={Login}/>
-          <Route path="/signUP" component={SignUp}/>
+          <Route path="/signup" component={SignUp}/>
+          <Route path="/bookbindinglist" component={BookbindingList}/>
+          <Route path="/bookbindingorder" component={BookbindingOrder}/>
+          <Route path="/photocopylist" component={PhotocopyList}/>
+          <Route path="/photocopyorder" component={PhotocopyOrder}/>
           <Route path="/export" component={TestexportData} />
           <Route path="/exportdata/:id" component={TestexportDataIndex} />
-          <Route path="/order" component={Order}/>
           <Route path="/user/filehistory" component={FileHistory}/>
+          
         </Switch>
       </Router>
     )}

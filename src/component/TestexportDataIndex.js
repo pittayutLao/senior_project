@@ -13,7 +13,7 @@ const TestexportDataIndex =(props) => {
         })
     },[])
 
-    return <div>
+    return <div className="paddingNow">
                 <h1>{props.match.params.id}</h1>
                 <p>{user.firstName}</p>
         </div>
