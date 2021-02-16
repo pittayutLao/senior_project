@@ -45,7 +45,7 @@ const BookbindingList =(props)=> {
                 <p className="subheadingorder">Queue List</p>
             </div>
             <div className="orderButton">
-                <Link to="/photocopyorder">
+                <Link to="/bookbindingorder">
                     <Button variant="success">
                         New Order
                     </Button>

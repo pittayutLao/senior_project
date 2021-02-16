@@ -417,6 +417,14 @@
 
 /*  */
 /*  */
+.historyList-std{
+  padding-top: 10%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  font-weight: bold;
+}
 
 .historyList {
   padding-top: 1%;
@@ -434,12 +442,12 @@
 
 .orderbackground {
   background-color: #E8E8E8;
-  padding-top: 10%;
+  padding-top: 9%;
+  padding-bottom: 1%;
 }
 
 .pricebackground {
   background-color: #EAF7FF;
-  text-align: center;
   padding-left: 20%;
   padding-right: 20%;
   font-size: 120%;
@@ -492,4 +500,47 @@
 
 .paddingNow{
   padding-top: 5%;
+}
+
+.numberTextfield{
+  width: 5%;
+  text-align: center;
+}
+
+.colorTextfield{
+  text-align: right;
+}
+
+.padding-sameline{
+  padding-left: 3%;
+}
+
+.advanceButton{
+  font-weight: bold;
+}
+
+.resultTextfield{
+  width: 12%;
+}
+
+.redrequir-price{
+  text-align: center;
+  color: red;
+}
+
+.result-position-1{
+  text-align: right;
+  padding-right: 4%;
+}
+
+.result-position-2{
+  text-align: right;
+  padding-right: 5%;
+}
+
+.resultButton-position{
+  text-align: right;
+  padding-right: 7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }

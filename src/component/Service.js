@@ -19,13 +19,13 @@ const Service =(props)=>{
                         
                         />
                         <Carousel.Caption className="serviceBack">
-                        <p className="serviceHeading">Photocopy Service</p>
+                        <p className="serviceHeading">Printing Service</p>
                         <br/>
-                        <p className="serviceSubheading">- บริการถ่ายเอกสาร</p>
+                        <p className="serviceSubheading">- บริการพิมพ์เอกสาร</p>
                         <br/>
-                        <p className="serviceParagraph">บริการถ่ายเอกสารผ่านระบบออนไลน์ ที่จะช่วยให้ลูกค้าทุกท่านได้ทำการสั่งถ่ายเอกสารของตนผ่านทางเว็บไซต์ของเรา และแน่นอนว่านี่ไม่ใช่การสั่งถ่ายเอกสารทั่วไป เพราะทางเราจัดเตรียมให้ลูกค้ามีสิทธิในการเลือกและกำหนดรูปแบบในการถ่ายเอกสารด้วยตัวของงท่านเอง เพื่อให้ท่านลูกค้าสามารถกำหนดรูปแบบในงานถ่ายเอกสารของตนได้</p>
+                        <p className="serviceParagraph">บริการพิมพ์เอกสารผ่านระบบออนไลน์ ที่จะช่วยให้ลูกค้าทุกท่านได้ทำการสั่งถ่ายเอกสารของตนผ่านทางเว็บไซต์ของเรา และแน่นอนว่านี่ไม่ใช่การสั่งถ่ายเอกสารทั่วไป เพราะทางเราจัดเตรียมให้ลูกค้ามีสิทธิในการเลือกและกำหนดรูปแบบในการถ่ายเอกสารด้วยตัวของงท่านเอง เพื่อให้ท่านลูกค้าสามารถกำหนดรูปแบบในงานถ่ายเอกสารของตนได้</p>
                         <br/>
-                        <Link to="/photocopylist"><Button variant="outline-dark">Order >></Button></Link>
+                        <Link to="/printinglist"><Button variant="outline-dark">Order >></Button></Link>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={500}>

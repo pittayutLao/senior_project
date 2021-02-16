@@ -4,7 +4,7 @@ import { Button, Modal } from 'react-bootstrap';
 import axios from "axios";
 import {Link} from 'react-router-dom';
 
-const PhotocopyList =(props)=> {
+const PrintingList =(props)=> {
     const [fileStorage,setFileStorage] = useState([]);
     const [modalShow, setModalShow] = React.useState(false);
     const [modalindex,setModalIndex] = useState("");
@@ -41,11 +41,11 @@ const PhotocopyList =(props)=> {
     return(
         <div className="orderbackground">
             <div className="requirbackground">
-                <p className="headingorder">PHOTOCOPY</p>
+                <p className="headingorder">PRINTING</p>
                 <p className="subheadingorder">Queue List</p>
             </div>
             <div className="orderButton">
-                <Link to="/photocopyorder">
+                <Link to="/printingorder">
                     <Button variant="success">
                         New Order
                     </Button>
@@ -90,7 +90,7 @@ const PhotocopyList =(props)=> {
     )
 }
 
-export default PhotocopyList;
+export default PrintingList;
 
 // function MyVerticallyCenteredModal(props) {
 

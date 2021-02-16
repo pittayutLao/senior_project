@@ -45,7 +45,7 @@ const MainHome = (props)=>{
             <div className="loginsignupButton">
                 {!Firebase.auth().currentUser ?
                     <Link to="/login" ><button className="loginButtonMainpage">LOGIN</button></Link> : <button className="loginButtonMainpage" onClick={onLogout}>LOGOUT</button>}{' '}
-                    <Link to="/signUp"><button className="signupButtonMainpage">SIGN-UP</button></Link>
+                    <Link to="/signUp"><button className="signupButtonMainpage">SIGN-UP</button></Link> 
                 
             </div> 
 

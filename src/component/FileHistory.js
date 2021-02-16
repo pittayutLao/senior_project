@@ -39,7 +39,7 @@ const FileHistory =(props)=> {
     }
 
     return(
-        <div className="historyList">
+        <div className="historyList-std">
             <div>
                 
 

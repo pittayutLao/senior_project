@@ -5,7 +5,7 @@ import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Collapse } from 'react-bootstrap';
 
-const BookbindingOrder =(props)=>{
+const PrintingOrder =(props)=>{
 
     const [uploadFile,setUploadFile] = useState(null);
     const [user,setUser] = useState(null);
@@ -20,7 +20,7 @@ const BookbindingOrder =(props)=>{
             } else {
               // User is signed out
               // ...
-            //  window.location.href="/"
+             window.location.href="/"
             }
           });
     },[])
@@ -37,7 +37,7 @@ const BookbindingOrder =(props)=>{
 
         // Create the file metadata
         var metadata = {
-            contentType: 'image/jpeg',
+            contentType: 'image/jpeg'
             };
 
         // Upload file and metadata to the object 'images/mountains.jpg'
@@ -56,7 +56,7 @@ const BookbindingOrder =(props)=>{
                 const {data} = response
               if(data.status.code === 1000){
                 alert("Your file has been upload.")
-                window.location.href="/";
+                // window.location.href="/";
               }
               else{
                 alert.log(data.status.message)
@@ -75,7 +75,7 @@ const BookbindingOrder =(props)=>{
       <div>
         <div className="orderbackground">
           <p className="headingorder">NEW ORDER</p>
-          <p className="subheadingorder">Bookbinding</p>
+          <p className="subheadingorder">* Printing *</p>
         </div>
         <div className="requirbackground">
           <br/>
@@ -199,86 +199,62 @@ const BookbindingOrder =(props)=>{
             <hr/>
             <p className="redrequir">Bookbinding requirement *</p>
             <p>ชนิดกระดาษ(ภายใน)
-              <span>
+                <span>
                 <select>
-                  <option>กระดาษแอร์เมล์  0.2บาท</option>
-                  <option>กระดาษฟอกขาว  0.5บาท</option>
-                  <option>กระดาษปรู๊ฟ  0.5บาท</option>
-                  <option>กระดาษถนอมสายตา 0.5บาท</option>
-                  <option>กระดาษอาร์ตมัน  1บาท</option>
-                  <option>กระดาษอาร์ตด้าน 1บาท</option>
-                  <option>กระดาษอาร์ตการ์ด1หน้า  1บาท</option>
-                  <option>กระดาษอาร์ตการ์ด2หน้า  1บาท</option>
-                  <option>กระดาษการ์ด  1.5บาท</option>
-                  <option>กระดาษแข็ง 1.5บาท</option>
-                  <option>กระดาษปอนด์  2บาท</option>
-                  <option>กระดาษแบงค์  3บาท</option>
-                  <option>กระดาษแฟนชี  3บาท</option>
+                    <option>กระดาษแอร์เมล์  0.2บาท</option>
+                    <option>กระดาษฟอกขาว  0.5บาท</option>
+                    <option>กระดาษปรู๊ฟ  0.5บาท</option>
+                    <option>กระดาษถนอมสายตา 0.5บาท</option>
+                    <option>กระดาษอาร์ตมัน  1บาท</option>
+                    <option>กระดาษอาร์ตด้าน 1บาท</option>
+                    <option>กระดาษอาร์ตการ์ด1หน้า  1บาท</option>
+                    <option>กระดาษอาร์ตการ์ด2หน้า  1บาท</option>
+                    <option>กระดาษการ์ด  1.5บาท</option>
+                    <option>กระดาษแข็ง 1.5บาท</option>
+                    <option>กระดาษปอนด์  2บาท</option>
+                    <option>กระดาษแบงค์  3บาท</option>
+                    <option>กระดาษแฟนชี  3บาท</option>
                 </select>
-              </span>
-              <span className="redrequir">
+                </span>
+                <span className="redrequir">
                 (ราคา:แผ่น*)
-              </span>
+                </span>
             </p>
             <p>สีกระดาษหน้าปก
-              <span>
+                <span>
                 <select>
-                  <option>ขาว</option>
-                  <option>ดำ</option>
-                  <option>แดง</option>
-                  <option>น้ำเงิน</option>
-                  <option>ชมพู</option>
-                  <option>ม่วง</option>
-                  <option>ฟ้า</option>
-                  <option>เหลือง</option>
-                  <option>ส้ม</option>
-                  <option>เขียวอ่อน</option>
-                  <option>เขียวแก่</option>
-                  <option>เขียวเข้ม</option>
+                    <option>ขาว</option>
+                    <option>ดำ</option>
+                    <option>แดง</option>
+                    <option>น้ำเงิน</option>
+                    <option>ชมพู</option>
+                    <option>ม่วง</option>
+                    <option>ฟ้า</option>
+                    <option>เหลือง</option>
+                    <option>ส้ม</option>
+                    <option>เขียวอ่อน</option>
+                    <option>เขียวแก่</option>
+                    <option>เขียวเข้ม</option>
                 </select>
-              </span>
-            </p>
-            <p>ชนิดกระดาษ(หน้าปก)
-              <span>
-                <select>
-                  <option>กระดาษแอร์เมล์  0.2บาท</option>
-                  <option>กระดาษฟอกขาว  0.5บาท</option>
-                  <option>กระดาษปรู๊ฟ  0.5บาท</option>
-                  <option>กระดาษถนอมสายตา 0.5บาท</option>
-                  <option>กระดาษอาร์ตมัน  1บาท</option>
-                  <option>กระดาษอาร์ตด้าน 1บาท</option>
-                  <option>กระดาษอาร์ตการ์ด1หน้า  1บาท</option>
-                  <option>กระดาษอาร์ตการ์ด2หน้า  1บาท</option>
-                  <option>กระดาษการ์ด  1.5บาท</option>
-                  <option>กระดาษแข็ง 1.5บาท</option>
-                  <option>กระดาษปอนด์  2บาท</option>
-                  <option>กระดาษแบงค์  3บาท</option>
-                  <option>กระดาษแฟนชี  3บาท</option>
-                </select>
-              </span>
-              <span className="redrequir">
-                (ราคา:แผ่น*)
-              </span>
+                </span>
             </p>
             <p>เลือกรูปแบบเข้าเล่ม
-              <span>
+                <span>
                 <select>
-                  <option>แบบเย็บมุมหลังคา 0บาท</option>
-                  <option>แบบสันพลาสติก 5บาท</option>
-                  <option>แบบสันกาว  50บาท</option>
-                  <option>แบบไสกาว  50บาท</option>
-                  <option>แบบเข้าห่วง 50บาท</option>
-                  <option>แบบกาวหัว  100บาท</option>
-                  <option>แบบเย็บกี่ 100บาท</option>
+                    <option>แบบเย็บมุมหลังคา 0บาท</option>
+                    <option>แบบสันพลาสติก 5บาท</option>
+                    <option>แบบสันกาว  50บาท</option>
+                    <option>แบบไสกาว  50บาท</option>
+                    <option>แบบเข้าห่วง 50บาท</option>
+                    <option>แบบกาวหัว  100บาท</option>
+                    <option>แบบเย็บกี่ 100บาท</option>
                 </select>
-              </span>
+                </span>
             </p>
-            <p>ปกใส
-              <Form.Check aria-label="option 1" label=" ใส่ปกใส +5฿"/>
-            </p>
-          </div>  
-        </div>
-        
+            </div>
+          </div>
+          
+
         <div className="pricebackground">
           <hr/>
           <div>
@@ -313,8 +289,7 @@ const BookbindingOrder =(props)=>{
           <p className="redrequir-price">Message : เมื่อลูกค้าได้ทำการยืนยันคำสั่งซื้อแล้ว ทางร้านเราจะมอบหมายเลขลำดับคิวของท่านลูกค้าให้ โปรดให้ท่านลูกค้าทำการตรวจสอบหมายเลขคิวและนำหมายเลขมายื่นให้ที่ร้านเพื่อทำการรับเอกสารของท่าน ขอขอบคุณที่ใช้บริการ</p>
         </div>
       </div>
-        
     )
 }
 
-export default BookbindingOrder;
+export default PrintingOrder;
